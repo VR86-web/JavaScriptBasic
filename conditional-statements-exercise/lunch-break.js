@@ -4,7 +4,7 @@ function lunchBreak(seriesName, episodeDuration, breakDuration) {
     let totalTime = lunchTime + breakTime + episodeDuration;
     let needetTime = totalTime - breakDuration;
 
-    if (needetTime < 0) {
+    if (needetTime >= 0) {
         console.log(`You have enough time to watch ${seriesName} and left with ${Math.ceil(needetTime)} minutes free time.`);
     }
 
